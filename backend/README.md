@@ -22,7 +22,12 @@ DB_PASSWORD=your_mysql_password
 DB_NAME=kalasaathi
 ```
 
-The backend currently configures a SQLAlchemy MySQL engine but does not create tables or connect to the database at startup.
+The backend does not connect to MySQL during startup, so `/health` remains
+available while the database is unavailable. It creates missing tables from the
+SQLAlchemy models the first time a database-backed endpoint is used. On Railway,
+configure `MYSQL_URL` or all five `MYSQLHOST`, `MYSQLPORT`, `MYSQLUSER`,
+`MYSQLPASSWORD`, and `MYSQLDATABASE` variables. Local `.env`/`DB_*` settings
+remain supported for development.
 
 ## Local image classification
 
