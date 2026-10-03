@@ -1,0 +1,11 @@
+.env
+.env.*
+.git
+.venv
+venv
+dataset/
+training-output/
+*.pth
+__pycache__/
+**/__pycache__/
+*.py[cod]
