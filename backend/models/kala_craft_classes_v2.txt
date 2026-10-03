@@ -1,0 +1,5 @@
+basket
+pot
+saree
+toy
+cloth

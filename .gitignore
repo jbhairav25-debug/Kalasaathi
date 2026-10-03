@@ -1,0 +1,34 @@
+# Flutter
+.dart_tool/
+build/
+.pub/
+.flutter-plugins
+.flutter-plugins-dependencies
+
+# Android / Gradle
+android/.gradle/
+android/local.properties
+.gradle/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Secrets
+*.env
+!.env.example
+backend/.env
+
+# Training data / generated training files
+backend/dataset/
+backend/training-output/
+*.pth
+
+# IDE / OS
+.vscode/
+.idea/
+*.iml
+.DS_Store
+Thumbs.db
